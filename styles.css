@@ -65,3 +65,23 @@ footer {
 footer p {
     margin: 10px 0;
 }
+
+/* Mobil uyumluluk için medya sorgusu */
+@media (max-width: 600px) {
+    .button-group {
+        grid-template-columns: 1fr; /* Butonları tek sütuna düşür */
+    }
+
+    h1 {
+        font-size: 20px; /* Başlık boyutunu küçült */
+    }
+
+    button {
+        font-size: 16px; /* Buton yazı boyutunu küçült */
+        padding: 12px;   /* Buton boyutunu küçült */
+    }
+
+    .container {
+        padding: 20px; /* Konteyner iç kenar boşluğunu küçült */
+    }
+}
