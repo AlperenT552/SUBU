@@ -5,20 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUBU Web Uygulaması</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #4b79a1, #283e51);
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff20;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ffdd57;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #283e51;
+            background: #ffdd57;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background: #ffa733;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ffdd57;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Mobil uyumluluk için medya sorgusu */
+        @media (max-width: 600px) {
+            .button-group {
+                grid-template-columns: 1fr; /* Butonları tek sütuna düşür */
+            }
+
+            h1 {
+                font-size: 20px; /* Başlık boyutunu küçült */
+            }
+
+            a {
+                font-size: 16px; /* Buton yazı boyutunu küçült */
+                padding: 12px;   /* Buton boyutunu küçült */
+            }
+
+            .container {
+                padding: 20px; /* Konteyner iç kenar boşluğunu küçült */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>SUBU Web Uygulaması</h1>
 
         <div class="button-group">
-            <button onclick="window.location.href='https://bys.subu.edu.tr/Account/Login?ReturnUrl=%2F'">BYS</button>
-            <button onclick="window.location.href='https://lms.subu.edu.tr/Account/Login?ReturnUrl=%2F'">LMS</button>
-            <button onclick="window.location.href='https://ebs.bys.subu.edu.tr/BolumDetay/?bi=521&pi=526&ay=32'">EBS</button>
-            <button onclick="window.location.href='https://unikart.subu.edu.tr/'">Unikart</button>
-            <button onclick="window.location.href='https://www.subu.edu.tr/tr'">SubüWeb</button>
-            <button onclick="window.location.href='https://tf.subu.edu.tr/'">Teknoloji Fak.</button>
-            <button onclick="window.location.href='https://eem.subu.edu.tr/tr'">EEM Bölümü</button>
-            <button onclick="window.location.href='https://sks.subu.edu.tr/tr/merkez-ve-hendek-yemek-menusu'">Yemek Menüsü</button>
+            <a href="https://bys.subu.edu.tr/Account/Login?ReturnUrl=%2F" target="_blank">BYS</a>
+            <a href="https://lms.subu.edu.tr/Account/Login?ReturnUrl=%2F" target="_blank">LMS</a>
+            <a href="https://ebs.bys.subu.edu.tr/BolumDetay/?bi=521&pi=526&ay=32" target="_blank">EBS</a>
+            <a href="https://unikart.subu.edu.tr/" target="_blank">Unikart</a>
+            <a href="https://www.subu.edu.tr/tr" target="_blank">SubüWeb</a>
+            <a href="https://tf.subu.edu.tr/" target="_blank">Teknoloji Fak.</a>
+            <a href="https://eem.subu.edu.tr/tr" target="_blank">EEM Bölümü</a>
+            <a href="https://sks.subu.edu.tr/tr/merkez-ve-hendek-yemek-menusu" target="_blank">Yemek Menüsü</a>
         </div>
     </div>
 
